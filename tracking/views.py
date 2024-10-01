@@ -46,7 +46,7 @@ def update_stage(request):
         stage_obj.time = timezone.now()
         stage_obj.save()
         
-        now = timezone.now()  # Capture current time
+        now = timezone.now()  
         if stage == 'Qr1':
             stage_completion.qr1_completed = True
             stage_completion.qr1_completed_time = now

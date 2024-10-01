@@ -11,9 +11,11 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure-$a91fpek+xr2d_3j#vp-4-*7e6bp_ibjsmaa%cd$ytlydw*e+x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api.herokuapp.com']
 
 
 # Application definition
@@ -87,12 +89,13 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 DATABASES = {
      'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'qr3',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306',
+         'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "postgres",
+        'USER': 'postgres.mkvtvytlditetpmygbdl',
+        'PASSWORD': 'Narendraprasath*2262001',
+        'HOST': 'aws-0-ap-southeast-1.pooler.supabase.com',
+        'PORT': '6543',
+        
     }
 }
 
@@ -113,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
-]
+]   
 
 
 # Internationalization
