@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-$a91fpek+xr2d_3j#vp-4-*7e6bp_ibjsmaa%cd$ytlydw*e+x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['microtechbackend.onrender.com']
+
 
 
 # Application definition
@@ -59,9 +60,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 # settings.py
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000", 
-    "http://localhost:3001", 
-    "http://localhost:3002",
+    'microtechbackend.onrender.com'
     ]
 
 ROOT_URLCONF = 'myproject.urls'
