@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$a91fpek+xr2d_3j#vp-4-*7e6bp_ibjsmaa%cd$ytlydw*e+x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['microtechbackend.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 
