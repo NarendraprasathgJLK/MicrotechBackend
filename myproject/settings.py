@@ -57,11 +57,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ALLOW_ALL_ORIGINS = True   
-# settings.py
+
+CSRF_TRUSTED_ORIGINS = ['https://microtechbackend.onrender.com']
 
 CORS_ALLOWED_ORIGINS = [
-    'microtechbackend.onrender.com'
-    ]
+    'https://microtechbackend.onrender.com',
+]
+
 
 ROOT_URLCONF = 'myproject.urls'
 
